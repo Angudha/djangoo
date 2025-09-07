@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Products</title>
+    <style>
+        body {
+        background-color: pink;
+        background-image: url(templates/backg.jpg);
+        }
+
+        .list-items{
+        font-size: 3em;
+        list-style: none;
+        color: hsl(0, 0%, 25%);
+        text-align: left;
+        margin: 0;
+        border: 1px;
+        padding: 5px;
+        }
+
+        button{
+        border: none;
+        font-size: 30px;
+        background-color: transparent;
+        width: 100%;
+        text-align: right;
+        cursor: pointer;
+        }
+
+        .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 1024px;
+        margin: 0 auto;
+        }
+
+        h1{
+        font-size: 2em;
+        font-style: Sans-serif;
+        }
+        ol{
+        font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+{% block content %}
+{% endblock %}
+</body>
+</html>
